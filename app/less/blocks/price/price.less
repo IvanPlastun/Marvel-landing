@@ -1,0 +1,209 @@
+.pricing {
+    background-image: url(../image/back.png);
+    box-shadow: 3000px 1200px rgba(250, 226, 26, 0.88) inset;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1200px) {
+        padding-bottom: 105px;
+        box-shadow: 0 1200px rgba(250, 226, 26, 0.88) inset;
+    }
+
+    &-head {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 107px;
+        }
+
+        &__heading-h3 {
+            color:  #010000;
+            font-size: 1.875em;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: absolute;
+            top: 40px;
+            margin-bottom: 0;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                top: 75px;
+                text-align: left;
+            }
+        }
+    }
+    &-head::before {
+        content: "pricing";
+        color:  #e6d119;
+        font-size: 3.688em;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-size: 5.688em;
+        }
+    }
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+
+.pricing-plan {
+    width: 285px;
+    margin-bottom: 30px;
+
+    @media (min-width: 480px) {
+        width: 361px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
+
+    &-head {
+        height: 212px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 212px rgba(0, 0, 0, 0.65) inset;
+        padding-top: 25px;
+        padding-bottom: 34px;
+    }
+}
+
+.pricing-plan-head_background-1 {
+    background-image: url(../image/photo/photo-6.png);
+}
+
+.pricing-plan-head_background-2 {
+    background-image: url(../image/news-img2.png);
+}
+
+.pricing-plan-head_background-3 {
+    background-image: url(../image/photo/man.png);
+}
+
+@media (min-width: 1200px) { 
+    .pricing-plan:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .pricing-plan:nth-child(3) {
+        margin-top: 50px;
+    }
+}
+
+.plan-name {
+    font-family: 'Poppins', sans-serif;
+    color:  #ffffff;
+    font-size: 0.938em;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.price-block {
+    color:  #ffffff;
+    font-size: 2.7em;
+    font-weight: 700;
+    line-height: 0.4;
+    text-align: center;
+    margin-bottom: 28px;
+
+    &__sup {
+        font-family: Muli;
+    }
+
+    &__sub {
+        font-family: Muli;
+        color:  #ffffff;
+        font-size: 0.413em;
+        font-weight: 400;
+        line-height: 1.846;
+    }
+}
+
+.plan-description {
+    font-family: Muli;
+    color:  #dbdbdb;
+    font-size: 0.813em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.comparison {
+    border: 1px solid #f1f1f1;
+    background-color:  #ffffff;
+    padding-top: 55px;
+    margin-bottom: 4px;
+
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &__item {
+            font-family: Muli;
+            color:  #808080;
+            font-size: 0.813em;
+            font-weight: 400;
+            line-height: 4.615;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+    }
+}
+
+.link-plans {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    color:  #444444;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 2.857;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.link-plans:hover {
+    background-color: rgb(70, 70, 70);
+    text-decoration: none;
+    color: #fff;
+}
+
+.popular-plan-text {
+    background-color:  #e6e6e6;
+    font-family: Muli;
+    color:  #444444;
+    font-size: 0.938em;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    padding: 13px 0;
+}
+

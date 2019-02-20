@@ -1,0 +1,68 @@
+.impressed {
+    background-image: url(../image/backIm.png);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__heading-h3 {
+        font-family: 'Lato', sans-serif;
+        color:  #ffffff;
+        font-size: 1.875em;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Lato', sans-serif;
+        color:  #ffffff;
+        font-size: 0.813em;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 103px;
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: center;
+        &__button {
+            display: block;
+            width: 170px;
+
+            font-family: 'Lato', sans-serif;
+            color:  #000000;
+            font-size: 0.813em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 14px 30px;
+            transition: 0.5s ease-in-out;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            margin-right: 19px;
+
+            &_setting-purchase {
+                background-color:  #ffe400;
+                text-decoration: none;
+
+                &:hover {
+                    background-color:  #dac615;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+            &_setting-get-in-touch {
+                background-color:  #ffffff;
+
+                &:hover {
+                    background-color:  #444;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

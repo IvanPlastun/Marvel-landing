@@ -1,0 +1,301 @@
+.about {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../image/O.png'), url('../image/ipad.png');
+    background-repeat: no-repeat;
+    background-position: 0 177px, 100% 76%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @media (min-width: 992px) {
+        padding-top: 96px;
+        padding-bottom: 146px;
+    }
+
+    &__info {
+        margin-bottom: 50px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 83px;
+        }
+    }
+
+    &__head {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "About";
+            color: #e8e8e8;
+            font-size: 4.688em;
+            font-weight: 900;
+            text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                font-size: 5.688em;
+            }
+        }
+    }
+
+    &__heading-h2 {
+        position: absolute;
+        top: 60px;
+        color:  #444444;
+        font-size: 2.25em;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            top: 75px;
+            line-height: 0.667;
+            text-align: left;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        @media (min-width: 768px) {
+            margin-top: 71px;
+        }
+    }
+}
+
+.button {
+    display: block;
+    width: 134px;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 0.935em;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+
+    @media (min-width: 480px) {
+       width: 215px;
+       padding: 24px 0;
+       font-size: 1.125em;
+    }
+
+    @media (min-width: 768px) {width: 226px;}
+}
+
+.button-info_settings {
+    color: #ffe400;
+    background-color: #000;
+    border: 1px solid #a6a6a6;
+    margin-right: 24px;
+}
+
+.button-info_settings:hover {
+    text-decoration: none;
+    background-color: #444;
+    color: #fff;
+}
+
+.button-exp_settings {
+    color: #000;
+    background-color: #ffe400;
+    border: 1px solid #ffe400;
+}
+
+.button-exp_settings:hover {
+    text-decoration: none;
+    background-color: #dac615;
+    border: 1px solid #dac615;
+    color: #fff;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+        margin-bottom: 183px;
+        flex-direction: row;
+    }
+
+    &__card-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        height: 399px;
+        border: 1px solid #aaa;
+        background-color: #212121;
+        padding-top: 60px;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        @media (min-width: 480px) {
+            width: 300px;
+        }
+
+        @media (min-width: 992px) {
+            margin-bottom: 0px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 360px;
+        }
+    }
+
+    &__icon {
+        color:  #ffe400;
+        font-size: 7.875em;
+        font-weight: 400;
+    }
+
+    &__heading {
+        color:  #ffffff;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    &__info {
+        display: none;
+        font-family: Muli;
+        color:  #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0 27px;
+    }
+
+    &__card-box::after {
+        content: "";
+        display: none;
+        border: 32px solid #e3cc00;
+        border-radius: 50%;
+        height: 190px;
+        width: 203px;
+        position: absolute;
+        right: -66px;
+        bottom: -42px;
+        z-index: -1;
+    }
+
+    &__card-box:hover {
+        background-color: #dac615;
+        padding-top: 20px;
+        &::after {
+            display: block;
+        }
+    }
+}
+
+.about-cards__card-box:hover .about-cards__icon{
+    color: #fff;
+}
+
+.about-cards__card-box:hover .about-cards__heading{
+    margin-bottom: 28px;
+}
+
+.about-cards__card-box:hover .about-cards__info{
+    display: block;
+}
+
+.quantitative-data__heading {
+    color:  #444444;
+    font-size: 1.875em;
+    font-weight: 700;
+    line-height: 1.333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quantitative-data_margin {
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 120px;
+    }
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 768px) {
+       flex-direction: row;
+    }
+
+    &__data {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            margin-bottom: 0px;
+         }
+    }
+
+    &__quatity {
+        color:  #444444;
+        font-size: 2.875em;
+        font-weight: 700;
+        line-height: 0.522;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-family: Muli;
+        color:  #757575;
+        font-size: 0.813em;
+        font-weight: 400;
+        line-height: 1.846;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: left;
+         }
+    }
+}
+
+
+
+

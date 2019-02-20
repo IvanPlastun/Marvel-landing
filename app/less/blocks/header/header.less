@@ -1,0 +1,191 @@
+
+.header {
+    background-color: #f4f4f4;
+    overflow: hidden;
+    height: 786px;
+
+    @media (min-width: 992px) {
+        height: 900px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 980px;
+    }
+    
+
+    &_position {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            height: 100%;
+            width: 62%;
+        }
+
+        &__logo {
+            color:  #444444;
+            font-size: 1.63em;
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+
+
+            @media (min-width: 480px) {
+                font-size: 2.5em;
+                margin-bottom: 73px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 3.75em;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background-color: #ffe400;
+                position: absolute;
+                left: -5%;
+                top: -25%;
+                z-index: -1;
+
+                @media (min-width: 480px) {
+                    width: 191px;
+                    height: 191px;
+                    left: -30px;
+                }
+
+                @media (min-width: 1200px) {
+                   top: 0;
+                }
+            }
+        }
+    }
+
+    &-image {
+        position: absolute;
+        z-index: 1;
+
+        @media (min-width: 480px) {
+            right: -100%;
+        }
+
+        @media (min-width: 768px) {
+            right: -50%;
+        }
+
+        @media (min-width: 992px) {
+            right: -30%;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 690px;
+            height: 744px;
+            border: 144px solid #ffe400;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            z-index: -1;
+            right: 55px;
+        }
+
+        @media (min-width: 992px) {
+            &::after {
+                content: "";
+                display: block;
+                border: 44px solid #ffe400;
+                width: 198px;
+                height: 194px;
+                border-radius: 50%;
+                position: absolute;
+                left: -110px;
+                bottom: 25%;
+                z-index: -1;
+            }
+        }
+
+        @media (min-width: 1200px) { 
+            &::after { 
+                bottom: 157px;
+            }
+
+        }
+    }
+}
+
+.header-info-slider-box__description {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 0.813em;
+    font-weight: 400;
+    line-height: 1.846;
+    margin: 0;
+    margin-bottom: 18px;
+
+    @media (min-width: 768px) {
+        color: #757575;
+    }
+}
+
+.header-info-slider-box__button {
+    display: inline-block;
+    border: 1px solid #444;
+    box-sizing: border-box;
+    background-color:  rgba(74, 74, 74, 0);
+    width: 180px;
+    margin-bottom: 20px;
+    padding: 18px 0;
+    text-align: center;
+
+    color:  #444444;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+
+    &:hover {
+        background-color: #444;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:active {
+        background-color: rgb(110, 110, 110);
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background-color:  #e3e3e3;
+    width: 22px;
+    height: 4px;
+    margin-right: 4px;
+    border: 0;
+    outline: none;
+}
+
+button.owl-dot.owl-dot.active {
+    background-color: #444;
+}

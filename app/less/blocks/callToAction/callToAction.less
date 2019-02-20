@@ -1,0 +1,80 @@
+.call-to-action {
+    background-image:url(../image/landscaper.png);
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    min-height: 690px;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+        padding-top: 162px;
+    }
+
+    @media (min-width: 992px) {
+        padding-bottom: 136px;
+        background-size: initial;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) {
+            margin-bottom: 65px;
+        }
+    }
+
+    &__heading {
+        color:  #fdfdfe;
+        font-size: 2.75em;
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @media (min-width: 768px) {
+            line-height: 0.545;
+        }
+    }
+
+    &__text {
+        font-family: Muli;
+        color:  #fdfdfe;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.625;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+
+        .button-info_settings {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .button-info_settings:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
+.call-to-action::before {
+    content: url(../image/circleAlpha.svg);
+    position: absolute;
+    right: 12%;
+    top: 7%;
+    z-index: -1;
+}

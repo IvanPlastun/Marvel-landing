@@ -1,0 +1,155 @@
+.responsive {
+    background-color: #fafafa;
+    border: 1px solid #d6d6d6;
+    background-image: url("../image/light-lamp.svg");
+    background-repeat: no-repeat;
+    background-position: 67px 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+        padding-top: 143px;
+        padding-bottom: 118px;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__info {
+            margin-bottom: 30px;
+
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+                width: auto;
+            }
+        }
+
+        &__heading {
+            position: relative;
+            margin-bottom: 50px;
+
+            @media (min-width: 768px) {
+               margin-bottom: 16px;
+            }
+        }
+
+        &__heading::before {
+            content: 'responsive';
+            color:  #f0f0f0;
+            font-size: 2.5em;
+            font-weight: 900;
+            text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                font-size: 4.5em;
+            }
+        }
+
+        &__heading-type-h4 {
+            color:  #444444;
+            font-size: 1.625em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+
+            @media (min-width: 992px) {
+               text-align: left;
+            }
+            
+            &_position {
+                position: absolute;
+                top: 30px;
+                left: 0;
+
+                @media (min-width: 768px) {
+                    top: 60px;
+                }
+            }
+        }
+
+        &__text {
+            font-family: Muli;
+            color: #757575;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 2.188;
+        }
+
+        &__description {
+            margin: 0;
+            line-height: 1.5;
+            margin-bottom: 20px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 26px;
+        }
+
+        &__button {
+            display: inline-block;
+            width: 127px;
+            background-color:  #ffe400;
+            border: 1px solid #ffe400;
+            padding: 16px 26px;
+
+            color: #000000;
+            font-size: 0.813em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #dac615;
+                border: 1px solid #dac615;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.fa-star {
+    margin-right: 15px;
+}
+
+.responsive-box__image {
+    align-self: center;
+
+    @media (min-width: 1200px) {
+        align-self: initial;
+    }
+}
+
+.responsive-box__image img {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 1200px) {
+        width: auto;
+    }
+}

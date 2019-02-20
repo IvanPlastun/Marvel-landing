@@ -1,0 +1,57 @@
+* {
+    outline: none;
+}
+
+@font-face {
+    src: url("../fonts/muli.ttf");
+    font-family: Muli;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container_settings {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.text {
+    font-family: Muli;
+    color:  #757575;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@import "blocks/header/header.less";
+@import "blocks/navigation/navigation.less";
+@import "blocks/about/about.less";
+@import "blocks/responsive/responsive.less";
+@import "blocks/callToAction/callToAction.less";
+@import "blocks/features/features.less";
+@import "blocks/portfolio/portfolio.less";
+@import "blocks/service/service.less";
+@import "blocks/price/price.less";
+@import "blocks/expert/expert.less";
+@import "blocks/impressed/impressed.less";
+@import "blocks/news/news.less";
+@import "blocks/contact/contact.less";
+@import "blocks/location/location.less";
+@import "blocks/footer/footer.less";
